@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp Details</title>
+    <link rel="stylesheet" href="{% static 'css/Show_emp.css' %}">
+</head>
+<body>
+    <center>
+        <h1>Employee Details</h1>
+        
+        <table border="3px">
+            <tr class="yes">
+                <th class="A">empno</th>
+                <th>ename</th>
+                <th>job</th>
+                <th class="A">mgr</th>
+                <th>hiredate</th>
+                <th class="A">sal</th>
+                <th class="A">comm</th>
+                <th class="A">deptno</th>
+            </tr>
+            {% for eo in detail %}
+            <tr>
+                <td class="a a1">{{eo.empno}}</td>
+                <td class="b">{{eo.ename}}</td>
+                <td class="c">{{eo.job}}</td>
+                <td class="d a1">{{eo.mgr}}</td>
+                <td class="e">{{eo.hiredate}}</td>
+                <td class="f a1">{{eo.sal}}</td>
+                <td class="g a1">{{eo.comm}}</td>
+                <td class="h a1">{{eo.deptno}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

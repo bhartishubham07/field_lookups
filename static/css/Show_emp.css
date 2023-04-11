@@ -1,0 +1,51 @@
+body{
+    background-color: palevioletred;
+}
+table{
+    border-color: red;
+    background-color: white;
+    width: 700px;
+    height: 470px;
+    cursor: pointer;
+    border-collapse: collapse;
+}
+th{
+    padding: 5px;
+    text-align: left;
+}
+td{
+    padding: 5px;
+}
+.yes:hover{
+    background-color: aqua;
+}
+.a:hover{
+    background-color: rgb(205, 72, 72);
+}
+.b:hover{
+    background-color: rgb(19, 82, 82)
+}
+.c:hover{
+    background-color: rgb(194, 237, 108);
+}
+.d:hover{
+    background-color: rgb(146, 82, 205);
+}
+.e:hover{
+    background-color: rgb(78, 78, 11);
+}
+.f:hover{
+    background-color: rgb(160, 160, 58);
+}
+.g:hover{
+    background-color: rgb(210, 173, 80);
+}
+.h:hover{
+    background-color: rgb(209, 104, 65);
+}
+.a1{
+    text-align: right;
+}
+.A{
+    text-align: right;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(76, 232, 224);
+}
+table{
+    width: 400px;
+    height: 200px;
+    border-collapse: collapse;
+}
+th{
+    background-color: aqua;
+    padding: 5px;
+}
+td{
+    background-color: pink;
+    padding: 5px;
+}
+.A, .a{
+    text-align: right;
+}
+.B, .b{
+    text-align: left;
+}

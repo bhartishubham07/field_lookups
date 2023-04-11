@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dept Details</title>
+    <link rel="stylesheet" href="{% static 'css/Show_dept.css' %}">
+</head>
+<body>
+    <center>
+        <h1>Department Details</h1>
+
+        <table border="2px">
+            <tr>
+                <th class="a">deptno</th>
+                <th class="b">dname</th>
+                <th class="b">loc</th>
+            </tr>
+
+            {% for do in details %}
+            <tr>
+                <td class="A">{{do.deptno}}</td>
+                <td class="B">{{do.dname}}</td>
+                <td class="B">{{do.loc}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
